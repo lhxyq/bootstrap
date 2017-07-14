@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+	<title>jquery validate</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<style type="text/css">
+        .error {
+        	color: red;
+        }
+	</style>
+</head>
+
+<body>
+    <form class="form-horizontal text-center" id="loginForm">
+        <div class="form-group">
+            <label for="name" class="col-lg-4 control-label">用户名</label>
+            <div class="col-lg-4">
+      			<input id=name type="text" class="form-control" placeholder="name" required>
+    		</div>
+    		<div class="col-lg-4 text-left"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="col-lg-4 control-label">Email</label>
+            <div class="col-lg-4">
+      			<input id="email" type="email" class="form-control" placeholder="email" required>
+    		</div>
+    		<div class="col-lg-4 text-left"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="pass" class="col-lg-4 control-label">密码</label>
+            <div class="col-lg-4">
+      			<input id="pass" type="password" class="form-control" placeholder="password" maxlength=3 required>
+    		</div>
+    		<div class="col-lg-4 text-left"></div>
+        </div>
+
+		<div class="form-group">
+            <label for="" class="col-lg-4 control-label">确认密码</label>
+            <div class="col-lg-4">
+      			<input id="comfirmPss" type="password" class="form-control" placeholder="password" equalTom="#pass">
+    		</div>
+    		<div class="col-lg-4 text-left"></div>
+        </div>
+
+        <div class="form-group text-left">
+    		<div class="col-sm-offset-4 col-lg-8">
+      		<button type="submit" class="btn btn-default">登录</button>
+   		 </div>
+  </div>
+    </form>
+</body>
+
+<script type="text/javascript" src="../js/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../js/jquery/messages_zh.js"></script>
+<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+   $.validator.addMethod("equalTom", function(value, element, param) {
+       var comfirmValue = $(param).val();
+       if (value == comfirmValue)
+       	   return true;
+       else
+           return false;
+   }, "密码不一致");
+    $(document).ready(function() {
+    	$("#loginForm").validate({
+    		debug: true,
+    		errorClass: "error",
+    		errorPlacement: function(error, element) {  
+    			error.appendTo(element.parent().next());
+			}
+    	});
+    });
+</script>
+</html>

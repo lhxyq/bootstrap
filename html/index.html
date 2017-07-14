@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial=2, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>bootstrap study</title>
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style type="text/css">
+        .text {
+        	height: 200px;
+        	background: gray;
+        }
+
+        .glyphicon-user {
+        	font-size: 16px;
+        	color: gray;
+        }
+</style>
+    </style>
+</head>
+
+<body>
+    <!-- <button class="btn btn-info">hello world</button>
+    <h1>标题一<small>小标题</small></h1>
+    <h2>标题二</h2>
+    <h3>标题三</h3>
+    <h4>标题四</h4>
+    <h5>标题五</h5>
+    <span class="h1">标题一</span>
+    <span class="h2">标题二</span>
+    <span class="h3">标题三</span>
+    <span class="h4">标题四</span>
+    <span class="h5">标题五</span>
+    <p>
+        <mark>向雅琴</mark><del>向雅琴</del><ins>向雅琴</ins><u>向雅琴</u><small>向雅琴</small><strong>向雅琴</strong>向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴
+    </p>
+    <p>
+        向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴向雅琴
+    </p>
+    <p class="text-left">
+        向雅琴
+    </p>
+    <p class="text-center">
+        向雅琴
+    </p>
+    <p class="text-right">
+        向雅琴
+    </p>
+    <p class="text-lowercase">
+        HELLO WORLD!
+    </p>
+    <p class="text-uppercase">
+        hello world!
+    </p>
+    <p class="text-capitalize">
+        hello world!
+    </p> -->
+    <!-- <table class="table table-striped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>标题一</th>
+                <th>标题二</th>
+                <th>标题三</th>
+                <th>标题四</th>
+                <th>标题五</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>内容一</td>
+                <td>内容二</td>
+                <td>内容三</td>
+                <td>内容四</td>
+                <td>内容五</td>
+            </tr>
+            <tr class="active">
+                <td>内容一</td>
+                <td>内容二</td>
+                <td>内容三</td>
+                <td>内容四</td>
+                <td>内容五</td>
+            </tr>
+            <tr class="success">
+                <td>内容一</td>
+                <td>内容二</td>
+                <td>内容三</td>
+                <td>内容四</td>
+                <td>内容五</td>
+            </tr>
+            <tr class="info">
+                <td>内容一</td>
+                <td>内容二</td>
+                <td>内容三</td>
+                <td>内容四</td>
+                <td>内容五</td>
+            </tr>
+            <tr class="waring">
+                <td>内容一</td>
+                <td>内容二</td>
+                <td>内容三</td>
+                <td>内容四</td>
+                <td>内容五</td>
+            </tr>
+            <tr class="danger">
+                <td>内容一</td>
+                <td>内容二</td>
+                <td>内容三</td>
+                <td>内容四</td>
+                <td>内容五</td>
+            </tr>
+        </tbody> 
+    </table>
+    <form class="form-horizontal text-center">
+	    <div class="form-group">
+	        <label for="" class="glyphicon glyphicon-user col-sm-5 col-md-5 col-lg-5 control-label ">用户名：</label>
+	        <div class="col-sm-5 col-md-5 col-lg-5 input-group">
+	            <span class="input-group-addon">@</span>
+            	<input type="text" class="form-control " name="" placeholder="请输入用户名">
+	        </div>
+	        
+	    </div>
+	    <div class="form-group">
+	        <label for="" class="col-sm-5 col-md-5 col-lg-5 control-label">密码：</label>
+	        <div class="col-sm-5 col-md-5 col-lg-5">
+				<input type="password" class="form-control " name="" placeholder="请输密码">
+	        </div>
+	    </div>
+	    <button class="btn btn-default "><span class="glyphicon glyphicon-ok">提交</span></button>
+	    <button class="btn btn-success btn-lg">成功</button>
+	    <button class="btn btn-primary btn-sm">私有</button>
+	    <button class="btn btn-info active">信息</button>
+	    <button class="btn btn-warning btn-block">警告</button>
+	    <button class="btn btn-danger" disabled="disabled">危险</button>
+	    <button class="btn btn-link">提交</button>
+	    <a class="btn btn-info" href="">a标签按钮</a>
+    </form>
+
+    <div class="text col-lg-3 col-md-4 col-sm-6 col-xs-12 col-lg-offset-3"></div>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        下拉<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="http://www.baidu.com">百度</a>
+            </li>
+            <li>
+                <a href="http://www.imooc.com">慕课网</a>
+            </li>
+        </ul>
+    </div>-->
+    <!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">弹窗</button>
+    
+    <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">新增</h4>
+                </div>
+                <div class="modal-body">
+                    <h2>弹出框</h2>
+                </div>
+                <div class="modal-footer">
+        			<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        			<button type="button" class="btn btn-primary">保存</button>
+      			</div>
+            </div>
+        </div>
+    </div> -->
+    <div class="text col-lg-3 col-md-4 col-sm-6 col-xs-12 col-lg-offset-3"></div>
+    <div class="container">
+    	<div class="left"></div>
+    	<div class="clear"></div>
+    	<div class="center"></div>
+    </div>
+</body>
+<style type="text/css">
+    .clear {
+    	clear: both;
+    }
+	.left {
+		position: absolute;
+		left: 0px;
+   		width: 50%;
+   		height: 200px;
+   		background: red;
+   		float: left;
+   	}
+    .center {
+    	position: absolute;
+    	right: 0px;
+   		width: 50%;
+   		height: 200px;
+   		background: gray;
+   		float: right;
+   	}
+   	.container {
+   		position: absolute;
+   		top: 10px;
+   		width: 100%;
+   		height: 200px;
+   		background: black;
+   	}
+</style>
+<script type="text/javascript" src="../js/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$('#myModal').modal();
+</script>
+</html>
